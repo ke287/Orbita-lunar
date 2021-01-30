@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./animaciones.css">
+</head>
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="grafica_contenedor">                
+
+                <div class="medidas_izquierda">
+                    <div class="centimetros_verticales columna_1"></div>                    
+                    
+                    
+                </div>
+                
+
+                <div class="medidas_abajo">
+                    <div class="centimetros_horizontales columna_2"></div>
+                </div>
+
+
+                <div class="planeta_tierra-contenedor">
+                    <div class="orbita_rastro">
+
+                        <div class="luna_orbita"> 
+    
+                            <div class="luna_wrapper">
+                                <div class="items_group">
+                                    <div class="marcador"></div>
+                                    <img class="moon_image" src="./assets/moon.png" alt="">
+                                </div>
+    
+                            </div>
+    
+                            <div class="tierra_wrapper">
+                                <img class="earth_image" src="./assets/tierra.png" alt="">
+                            </div>                       
+    
+                        </div>
+                    </div>
+                        
+                </div>
+
+
+                <div class="datos_container ">
+                    <div class="row">
+
+                        <div class="col mt-2 ms-2">
+                            <div class="card" style="width: 18rem;">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"><span> <strong>Distancia (A.U X10^-3):</strong> </span> <br> <span id="distancia_ua" class="details_font">---</span> </li>
+                                  <li class="list-group-item"><span> <strong>Distancia (cm: escala):</strong> </span> <br> <span id="distancia_cm" class="details_font">---</span> </li>
+
+                                  <li class="list-group-item"><span> <strong>Longitud (grados):</strong> </span> <br> <span id="longitud_grados" class="details_font">---</span> </li>
+                                </ul>
+                              </div>
+                        </div>
+
+                        <div class="col datos_col-derecha">
+                            <div class="datos_orbita ms-3">
+                                <figure class="info_image-container">
+                                    <img class="info_image" src="./assets/info.png" alt="">
+                                </figure>
+
+                                <p>El círculo es un marco de referencia para poder observar que la luna no orbita de manera circular.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="control_panel">
+                                <div class="controls_wrapper">
+                                    <img id="play_button" src="./assets/play_btn.png" alt="">
+                                    <h4>Click para iniciar simulación</h4>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="mt-4">Datos de distancia a escala:</h2>
+                    <h4 class="mt-2">Distancia: </h4>                    
+                    <p class="explicando_detalles">-Cada 2.5 cm en el plano equivalen a 1x10^-2 U.A.</p>
+                    
+                    <h4 class="mt-2">Tiempo: </h4>    
+                    <p class="explicando_detalles">-Cada 29 días están representados en 20 segundos que dura la órbita.</p>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        
+            
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="./grafica.js"></script>
+    <script src="./datos.js"></script>
+</body>
+</html>

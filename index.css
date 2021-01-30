@@ -1,0 +1,201 @@
+body{
+    border: 0;
+    background-color: #f8f9fa;
+}
+.container{
+    margin: 0 100px;
+}
+.grafica_contenedor{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    height: 16cm;
+    width: 30cm;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+
+    display: flex;
+    position: relative;
+}
+
+
+
+
+.medidas_izquierda{  /* contenedor de las lineas Verticales */
+    height: 100%;
+    width:  100%;
+    border: 1px solid red;
+    position: absolute;
+
+    display: flex;
+}
+
+.centimetros_verticales{
+    width: 1cm;
+    height: 100%;
+    border-right: 1px solid rgb(170, 170, 170);
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.medidas_abajo{ /* Contenedor de las lineas Horizontales */
+    height: 100%;
+    width: 100%;
+    border: 1px solid blue;
+    position: absolute;
+}
+.centimetros_horizontales{
+    width: 100%;
+    height: calc(1cm - 1px);
+    border-top: 1px solid rgb(170, 170, 170); 
+    display: flex;
+    justify-content: left;
+}
+
+.centimetros_eje_Y{
+    font-size: 12px;
+}
+
+/*Footer:*/
+.footer{
+    background-color: #f8f9fa;
+    padding: 20px 40px;
+}
+
+.autor{
+    text-decoration: none;
+    color: #0a58ca;
+}
+
+
+
+
+
+/*Contenedor del planeta tierra*/
+
+.planeta_tierra-contenedor{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth_image{
+    height: 100px;
+    width: 100px;
+}
+.moon_image{
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+}
+.luna_wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.luna_orbita{    
+    height: 13.434999999999999cm;
+    width: 0cm;
+    
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.tierra_wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+}
+
+.marcador{
+    height: 0px;
+    width: 100px;
+    border: 1px solid grey;
+    position: absolute;
+}
+.items_group{
+    display: flex;
+    
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    /*border: 1px solid orange;*/
+    border-radius: 100px;
+}
+.orbita_rastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13cm;
+    width: 13cm;
+    border: 3px dashed grey;
+    border-radius: 500px;
+}
+
+
+/*ESTILOS DE LOS DATOS EN PANTALLA*/
+.datos_container{
+    height: 100%;
+    width: 100%;    
+    position: absolute;
+}
+
+.datos_orbita{
+    height: 150px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: rgb(252, 252, 252);
+    padding: 2%;
+    margin-top: 1.5%;
+    box-shadow: 0px 0px 6px;
+    text-align: center;
+    margin-top: 10px;
+}
+.info_image{
+    height: 25px;
+    
+}
+.info_image-container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.datos_col-derecha{
+    display: grid;
+    justify-content: center;
+}
+
+.explicando_detalles{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.controls_wrapper{
+    margin-top: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+.controls_wrapper img{
+    cursor: pointer;
+}
+
+.details_font{
+    color: rgb(221, 59, 19);
+    font-weight: 500;
+}
